@@ -1,15 +1,15 @@
 package com.example.logicbuilding.repository
 
 import com.example.logicbuilding.api.RetrofitInstance
-import com.example.logicbuilding.model.Post
-import com.example.logicbuilding.model.periods
+import com.example.logicbuilding.model.Data
+import com.example.logicbuilding.model.Period
 
 class Repository {
-    suspend fun getPost(): Post {
+    suspend fun getPost(): Data {
         return RetrofitInstance.api.getPost()
     }
 
-    suspend fun getPeriod(): periods {
+    suspend fun getPeriod(): Period {
         return RetrofitInstance.api.getPeriod()
     }
 }

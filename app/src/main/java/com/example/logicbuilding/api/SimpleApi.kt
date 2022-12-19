@@ -1,13 +1,13 @@
 package com.example.logicbuilding.api
 
-import com.example.logicbuilding.model.Post
-import com.example.logicbuilding.model.periods
+import com.example.logicbuilding.model.Data
+import com.example.logicbuilding.model.Period
 import retrofit2.http.GET
 
 interface SimpleApi {
     @GET("")//TODO: need the endpoint
-    suspend fun getPost(): Post
+    suspend fun getPost(): Data
 
     @GET("")//TODO: need the endpoint
-    suspend fun getPeriod(): periods
+    suspend fun getPeriod(): Period
 }
